@@ -10,7 +10,8 @@ Summary(pl):	File::Random - modu³ Perla do losowego wyboru pliku
 Name:		perl-File-Random
 Version:	0.17
 Release:	3
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4138133bf7fb0a2b4400073a3f1cea1d
