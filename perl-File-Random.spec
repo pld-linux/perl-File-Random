@@ -9,7 +9,7 @@ Summary:	File::Random - Perl module for random selecting of a file
 Summary(pl):	File::Random - modu³ Perla do losowego wyboru pliku
 Name:		perl-File-Random
 Version:	0.17
-Release:	3
+Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
