@@ -22,7 +22,7 @@ BuildRequires:	perl-Test-ManyParams
 BuildRequires:	perl-Test-Simple
 BuildRequires:	perl-Test-Warn
 %endif
-BuildRequires:	rpm-perlprov >= 3.0.3-26
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
