@@ -3,8 +3,8 @@
 %bcond_without	tests # do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	File
-%define	pnam	Random
+%define		pdir	File
+%define		pnam	Random
 Summary:	File::Random - Perl module for random selecting of a file
 Summary(pl):	File::Random - modu³ Perla do losowego wyboru pliku
 Name:		perl-File-Random
