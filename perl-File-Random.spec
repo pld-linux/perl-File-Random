@@ -9,7 +9,7 @@ Summary:	File::Random - Perl module for random selecting of a file
 Summary(pl):	File::Random - modu³ Perla do losowego wyboru pliku
 Name:		perl-File-Random
 Version:	0.17
-Release:	4
+Release:	5
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -17,13 +17,13 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	4138133bf7fb0a2b4400073a3f1cea1d
 BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
-BuildRequires:	perl(Want)
 BuildRequires:	perl-Set-Scalar
 BuildRequires:	perl-Test-Class
 BuildRequires:	perl-Test-Exception
 BuildRequires:	perl-Test-ManyParams
 BuildRequires:	perl-Test-Simple
 BuildRequires:	perl-Test-Warn
+BuildRequires:	perl-Want
 %endif
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -47,7 +47,6 @@ standardowe zadanie - wyboru losowej linii z pliku.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-
 %{__make}
 
 %{?with_tests:%{__make} test}
