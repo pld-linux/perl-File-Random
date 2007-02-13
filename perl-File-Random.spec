@@ -6,7 +6,7 @@
 %define		pdir	File
 %define		pnam	Random
 Summary:	File::Random - Perl module for random selecting of a file
-Summary(pl.UTF-8):   File::Random - moduł Perla do losowego wyboru pliku
+Summary(pl.UTF-8):	File::Random - moduł Perla do losowego wyboru pliku
 Name:		perl-File-Random
 Version:	0.17
 Release:	6
