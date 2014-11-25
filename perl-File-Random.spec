@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests # do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	File
 %define		pnam	Random
+%include	/usr/lib/rpm/macros.perl
 Summary:	File::Random - Perl module for random selecting of a file
 Summary(pl.UTF-8):	File::Random - moduł Perla do losowego wyboru pliku
 Name:		perl-File-Random
@@ -15,7 +15,9 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4138133bf7fb0a2b4400073a3f1cea1d
+URL:		http://search.cpan.org/dist/File-Random/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Set-Scalar
 BuildRequires:	perl-Test-Class
@@ -25,13 +27,12 @@ BuildRequires:	perl-Test-Simple
 BuildRequires:	perl-Test-Warn >= 0:0.08-2
 BuildRequires:	perl-Want
 %endif
-BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This module simplifies the routine job of selecting a random file.
-(As you can find at CGI scripts).
+This module simplifies the routine job of selecting a random file. (As
+you can find at CGI scripts).
 
 The simple standard job of selecting a random line from a file is
 implemented, too.
