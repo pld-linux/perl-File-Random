@@ -4,7 +4,6 @@
 
 %define		pdir	File
 %define		pnam	Random
-%include	/usr/lib/rpm/macros.perl
 Summary:	File::Random - Perl module for random selecting of a file
 Summary(pl.UTF-8):	File::Random - moduł Perla do losowego wyboru pliku
 Name:		perl-File-Random
